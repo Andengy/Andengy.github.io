@@ -19,6 +19,8 @@ function greeting(){
     words.innerHTML = "Welcome to Flatland.<br> I am Square ";
 }
 words.addEventListener('load', (event) => greeting())
+//words.addEventListner('load, (event) => greeting())
+document.onload = greeting()
 
 function showMessage(){
     let message = "Build a " + createBuzzwordPhrase
