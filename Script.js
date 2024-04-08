@@ -1,3 +1,16 @@
+<script>
+function makeGreen(){
+    document.getElementById('Square').Style.background = 'green';
+}
+function makeRed(){
+    document.getElementById('Square').Style.background = 'red';
+}
+function makeGrey(){
+    document.getElementbyID('Square').Style.background = 'grey';
+}
+</script>
+
+
 function createBuzzwordPhrase() {
     /* See https://en.wikipedia.org/wiki/List_of_buzzwords */
     let buzz = ["Paradigm-changing", "Multi-tier", "10,000-foot", "Agile", "Customer", "Win-win"];
