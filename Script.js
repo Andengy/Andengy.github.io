@@ -9,7 +9,7 @@ function changeColour(color){
 //3. link element, event to the functionality
 // ie add events
 
-square.addEventListener('click', () => changeColour('green'));
+square.addEventListener('click', () => ShowMessage());
 square.addEventListener('mouseover', () => changeColour('grey'));
 square.addEventListener('mouseout', () => changeColour('red'));
 
@@ -19,6 +19,12 @@ function greeting(){
     words.innerHTML = "Welcome to Flatland.<br> I am Square ";
 }
 words.addEventListener('load', (event) => greeting())
+
+function showMessage(){
+    let message = "Build a " + createBuzzwordPhrase
+    words.innerHTML = message;
+}
+
 
 
 function createBuzzwordPhrase() {
