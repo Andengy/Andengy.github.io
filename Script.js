@@ -1,14 +1,17 @@
-<script>
-function makeGreen(){
-    document.getElementById('Square').Style.background = 'green';
+// 1. Locate the element(s)
+let square = dcument.getElementById('square'){
+// 2. Write the functionality needed wen event occurs
+    function changeColour(color){
+        square.style.background = colour;
+
+    }
 }
-function makeRed(){
-    document.getElementById('Square').Style.background = 'red';
-}
-function makeGrey(){
-    document.getElementbyID('Square').Style.background = 'grey';
-}
-</script>
+//3. link element, event to the functionality
+// ie add events
+
+square.addEventListener('click',(event) => changeColour('Green'))
+square.addEventListener('mouseover',(event) => changeColour('Grey'))
+square.addEventListener('mouseout',(event) => changeColour('Red'))
 
 
 function createBuzzwordPhrase() {
