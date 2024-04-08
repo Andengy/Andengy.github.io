@@ -6,12 +6,6 @@ function changeColour(color){
     square.style.background = color;
 }
 
-//3. link element, event to the functionality
-// ie add events
-
-square.addEventListener('click', () => ShowMessage());
-square.addEventListener('mouseover', () => changeColour('grey'));
-square.addEventListener('mouseout', () => changeColour('red'));
 
 let words = document.getElementById('word')
 function greeting(){
@@ -41,3 +35,10 @@ function createBuzzwordPhrase() {
 
     return  buzz[idx_buz] + " " + action[idx_act] + " " + outcome[idx_out];
 }
+
+//3. link element, event to the functionality
+// ie add events
+
+square.addEventListener('click', () => ShowMessage());
+square.addEventListener('mouseover', () => changeColour('grey'));
+square.addEventListener('mouseout', () => changeColour('red'));
