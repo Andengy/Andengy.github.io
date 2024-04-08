@@ -1,17 +1,24 @@
 // 1. Locate the element(s)
-let square = dcument.getElementById('square'){
-// 2. Write the functionality needed wen event occurs
-    function changeColour(color){
-        square.style.background = colour;
+let square = document.getElementById('square');
 
-    }
+// 2. Write the functionality needed when event occurs
+function changeColour(color){
+    square.style.background = color;
 }
+
 //3. link element, event to the functionality
 // ie add events
 
-square.addEventListener('click',(event) => changeColour('Green'))
-square.addEventListener('mouseover',(event) => changeColour('Grey'))
-square.addEventListener('mouseout',(event) => changeColour('Red'))
+square.addEventListener('click', () => changeColour('green'));
+square.addEventListener('mouseover', () => changeColour('grey'));
+square.addEventListener('mouseout', () => changeColour('red'));
+
+let words = document.getElementById('word')
+function greeting(){
+    console.log("Welcome to Flatland")
+    words.innerHTML = "Welcome to Flatland.<br> I am Square ";
+}
+words.addEventListener('load', (event) => greeting())
 
 
 function createBuzzwordPhrase() {
